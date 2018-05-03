@@ -10,13 +10,27 @@ class Chat extends Component {
     super(props)
     this.state = {
       messages: [],
+      waitingResponse: false,
     }
   }
 
   handleNewMessage = (text) => {
     this.setState({
-      messages: [...this.state.messages, { me: true, author: "Eu", body: text }],
+      messages: [...this.state.messages, { me: true, author: 'Eu', body: text }],
+      waitingResponse: true,
     })
+    this.mockResponseMessage()
+  }
+
+  mockResponseMessage = () => {
+    if (!this.state.waitingResponse) {
+      setTimeout(() => {
+        this.setState({
+          messages: [...this.state.messages, { me: false, author: 'Outro', body: 'Resposta simulada.' }],
+          waitingResponse: false,
+        })
+      }, 1000);
+    }
   }
 
   render() {
