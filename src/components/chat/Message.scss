@@ -1,0 +1,19 @@
+.Message {
+  line-height: 1.5em;
+
+  &.log {
+    color: #bbb;
+  }
+
+  .author {
+    font-weight: bold;
+    color: #888;
+    margin: 0 5px 0 0;
+  }
+
+  &.me {
+    .author {
+      color: #3d9ccc;
+    }
+  }
+}

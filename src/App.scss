@@ -1,0 +1,41 @@
+@import 'styles/_mixins.scss';
+
+body {
+  font-family: sans-serif;
+}
+html {
+-webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+        box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+-webkit-box-sizing: inherit;
+   -moz-box-sizing: inherit;
+        box-sizing: inherit;
+}
+
+
+.App {
+  padding: 5px;
+
+  .btn {
+    padding: 10px;
+    border: 1px solid transparent;
+    background-color: #17a2b8;
+    color: #fff;
+    border-radius: .25rem;
+    cursor: pointer;
+  }
+  .addchat, .nochats {
+    margin: 5px;
+  }
+}
+
+.Chats {
+  @include breakpoint(medium) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
