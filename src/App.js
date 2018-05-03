@@ -8,11 +8,7 @@ class App extends Component {
     this.state = {
       chats: [],
     }
-  }
-
-  componentDidUpdate = () => {
-    console.log(this.state)
-  }
+  } 
 
   renderChats = () => {
     if (!this.state.chats.length) {
