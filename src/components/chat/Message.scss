@@ -1,19 +1,17 @@
-.Message {
+.chat__message {
   line-height: 1.5em;
 
-  &.log {
+  &--log {
     color: #bbb;
   }
 
-  .author {
+  &--author {
     font-weight: bold;
     color: #888;
     margin: 0 5px 0 0;
   }
 
-  &.me {
-    .author {
-      color: #3d9ccc;
-    }
+  &--me &--author{
+    color: #3d9ccc;
   }
 }

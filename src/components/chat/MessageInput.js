@@ -19,7 +19,7 @@ class MessageInput extends Component {
 
   render() {
     return (
-      <form className="Chat__input" onSubmit={this.handleFormSubmit}>
+      <form className="chat__input" onSubmit={this.handleFormSubmit}>
         <div className="input-container">
           <input
             type="text"

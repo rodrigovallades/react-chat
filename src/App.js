@@ -8,7 +8,7 @@ class App extends Component {
     this.state = {
       chats: [],
     }
-  } 
+  }
 
   renderChats = () => {
     if (!this.state.chats.length) {
@@ -19,7 +19,7 @@ class App extends Component {
         <Chat key={i} title={chat.title} />
       )
     })
-    return ( <div className='Chats'>{chats}</div> )
+    return ( <div className='chats'>{chats}</div> )
   }
 
   addChat = () => {
@@ -30,7 +30,7 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
+      <div className="app">
         <button onClick={this.addChat} className="btn addchat">Novo chat</button>
         {this.renderChats()}
       </div>

@@ -35,7 +35,7 @@ class Chat extends Component {
 
   render() {
     return (
-      <div className="Chat">
+      <div className="chat">
         <Header title={this.props.title} count={this.state.messages.length} />
         <MessageList messages={this.state.messages} />
         <MessageInput onMessageSend={this.handleNewMessage} />

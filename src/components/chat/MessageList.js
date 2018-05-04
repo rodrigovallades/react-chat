@@ -24,7 +24,7 @@ class MessageList extends Component {
 
   render() {
     return (
-      <ul className="Chat__messages" ref={this.setRef}>
+      <ul className="chat__messages" ref={this.setRef}>
         {this.renderMessages()}
       </ul>
     )
