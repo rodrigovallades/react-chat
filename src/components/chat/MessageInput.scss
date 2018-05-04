@@ -3,31 +3,30 @@
 .chat {
   &__input {
     display: flex;
-    background: #ccc;
+    background-color: #eee;
     border-top: 1px solid #ccc;
     border-radius: 0 0 $border-radius $border-radius;
-    flex: 0 0 30px;
+    padding: 4px;
 
     .input-container {
       flex: 1;
-      margin: 1px;
     }
 
     .button-container {
       flex: 0 0 6em;
-      margin: 1px 1px 1px 0;
     }
     input {
-      padding: 0 0 0 4px;
+      padding: 10px 8px;
+      background: #fff;
     }
     button {
       cursor: pointer;
+      background-color: transparent;
+      padding: 0;
     }
     input, button {
-      background: #fff;
+      border: 0;
       border-radius: $border-radius;
-      border: 1px solid #ccc;
-      font-size: inherit;
       height: 100%;
       outline: none;
       width: 100%;
