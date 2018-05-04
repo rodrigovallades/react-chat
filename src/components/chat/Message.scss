@@ -1,17 +1,36 @@
+@import '../../styles/_variables.scss';
+
 .chat__message {
   line-height: 1.5em;
+  float: left;
+  text-align: left;
+  clear: both;
+  max-width: 70%;
+  padding: 5px;
+  margin-bottom: 4px;
+  border-radius: $border-radius;
+  background-color: #fff;
+  word-wrap: break-word;
+  word-break: break-all;
 
   &--log {
     color: #bbb;
+    float: none;
+    text-align: center;
+    max-width: 100%;
   }
 
   &--author {
     font-weight: bold;
-    color: #888;
     margin: 0 5px 0 0;
   }
 
+  &--me {
+    float: right;
+    background-color: #f3ffce;
+  }
+
   &--me &--author{
-    color: #3d9ccc;
+
   }
 }

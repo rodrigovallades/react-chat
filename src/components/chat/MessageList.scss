@@ -1,9 +1,10 @@
-.Chat {
+.chat {
   &__messages {
     overflow-y: auto;
     padding: 4px;
     flex: 1;
     list-style: none;
     margin: 0;
+    background-color: #e2e2e2;
   }
 }

@@ -1,9 +1,11 @@
+@import '../../styles/_variables.scss';
+
 .chat {
   &__input {
     display: flex;
     background: #ccc;
     border-top: 1px solid #ccc;
-    border-radius: 0 0 3px 3px;
+    border-radius: 0 0 $border-radius $border-radius;
     flex: 0 0 30px;
 
     .input-container {
@@ -23,7 +25,7 @@
     }
     input, button {
       background: #fff;
-      border-radius: 3px;
+      border-radius: $border-radius;
       border: 1px solid #ccc;
       font-size: inherit;
       height: 100%;

@@ -1,8 +1,9 @@
 @import '../../styles/_mixins.scss';
+@import '../../styles/_variables.scss';
 
 .chat {
   border: 1px solid #ccc;
-  border-radius: 3px;
+  border-radius: $border-radius;
   height: 350px;
   margin: 5px;
   font-size: 13px;
