@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import './MessageInput.css'
 
 class MessageInput extends Component {
+
   componentDidMount = () => {
     this.input.focus()
   }
@@ -19,7 +20,7 @@ class MessageInput extends Component {
 
   render() {
     return (
-      <form className="chat__input" onSubmit={this.handleFormSubmit}>
+      <form className="chat__input" onSubmit={this.handleFormSubmit.bind(this)}>
         <div className="input-container">
           <input
             type="text"

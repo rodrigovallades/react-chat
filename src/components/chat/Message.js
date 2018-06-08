@@ -3,6 +3,7 @@ import classNames from "classnames"
 import './Message.css'
 
 class Message extends Component {
+
   render() {
     const classes = classNames('chat__message', {
       'chat__message--log': !this.props.author,

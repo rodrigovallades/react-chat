@@ -12,7 +12,7 @@ class App extends Component {
 
   renderChats = () => {
     if (!this.state.chats.length) {
-      return ( <p className="nochats">Nenhum chat aberto.</p> )
+      return ( <p className="nochats">Esta aplicação em React 16 simula vários chatbots abertos. A ideia é mostrar um código moderno e componentizado, utilizando módulos, CSS custom (sem boilerplate), SCSS, BEM, mobile-first e demais técnicas e boas práticas atuais.</p> )
     }
     let chats = this.state.chats.map((chat, i) => {
       return (
@@ -24,15 +24,15 @@ class App extends Component {
 
   addChat = () => {
     this.setState((prevState, props) => {
-      return { chats: [...prevState.chats, { title: `Chat ${prevState.chats.length+1}` }] };
+      return { chats: [...prevState.chats, { title: `Chat ${prevState.chats.length+1}` }] }
     });
   }
 
   render() {
     return (
       <div className="app">
-        <button onClick={this.addChat} className="btn addchat">Novo chat</button>
         {this.renderChats()}
+        <button onClick={this.addChat} className="btn addchat">Novo chat</button>
       </div>
     )
   }

@@ -6,6 +6,7 @@ import Header from './Header'
 import './Chat.css'
 
 class Chat extends Component {
+
   constructor(props) {
     super(props)
     this.state = {

@@ -3,6 +3,7 @@ import Message from './Message'
 import './MessageList.css'
 
 class MessageList extends Component {
+
   componentDidUpdate = () => {
     this.node.scrollTop = this.node.scrollHeight
   }
