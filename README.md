@@ -2,7 +2,7 @@
 
 ## Preview
 
-https://chat-vallades.herokuapp.com/
+https://vallades-chat.surge.sh/
 
 ## Sobre mim
 
