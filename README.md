@@ -2,7 +2,7 @@
 
 ## Preview
 
-https://vallades-chat.surge.sh/
+https://vallades-chat.netlify.app
 
 ## Sobre mim
 
